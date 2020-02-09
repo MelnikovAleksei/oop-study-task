@@ -86,19 +86,14 @@
 
         let person1 = new Person('Bob', 'Smith', 32, 'm', ['music', 'skiing', 'boxing']);
         */
-
-        //##//##//##//##//##//##// Inheritance in JavaScript
-
-        // constructor
-
         function Person (first, last, age, gender, interests) {
-            name = {
+            this.name = {
                 first,
                 last
-            },
-            this.age = age,
-            this.gender = gender,
-            this.interests = interests
+            };
+            this.age = age;
+            this.gender = gender;
+            this.interests = interests;
         };
 
         // defined methods
@@ -150,5 +145,8 @@
 
             this.subject = subject;
         }
+
+        Teacher.prototype = Object.create(Person.prototype);
+       
     </script>
 </html>
