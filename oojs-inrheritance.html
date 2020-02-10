@@ -159,6 +159,25 @@
           };
         }
 
-        
+        // defined Teacher class
+
+        class Teacher extends Person {
+          
+          constructor(first, last, age, gender, interests, subject, grade) {
+            super(first, last, age, gender, interests);
+            // specific
+            this._subject = subject;
+            this.grade = grade;
+          };
+          
+          get subject() {
+            return this._subject;
+          };
+
+          set subject(newSubject) {
+            this._subject = newSubject; 
+          };
+
+        }
     </script>
 </html>
