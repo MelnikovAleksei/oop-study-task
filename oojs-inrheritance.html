@@ -24,7 +24,7 @@
         const code = input.value;
         para.textContent = eval(code);
       }
-
+/*
 // constructor
 
       function Person(first, last, age, gender, interests) {
@@ -119,7 +119,8 @@
 
             alert('Hello. My name is ' + prefix + ' ' + this.name.last + ', and I teach ' + this.subject + '.');
         };
-       
+        
+             
        // defining Student () constructor
 
        function Student(first, last, age, gender, interests, faculty) {
@@ -135,5 +136,29 @@
        Student.prototype.greeting = function() {
             alert('Yo! I\'m ' + this.name.first + '.');
         };
+
+        */
+
+        // rewriten to class style
+
+        class Person {
+          constructor(first, last, age, gender, interests) {
+            this.name = {
+              first,
+              last
+            };
+            this.age = age;
+            this.gender = gender;
+            this.interests = interests;
+          }
+          greeting() {
+            alert(`Hi! I'm ${this.name.first}`);
+          };
+          farewell() {
+            alert(`${this.name.first} has left the building`);
+          };
+        }
+
+        
     </script>
 </html>
