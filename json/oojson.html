@@ -48,7 +48,17 @@
             showHeroes(superHeroes);
         }
 
-        
+        // create functions definitions
+
+        function populateHeader(jsonObject) {
+            const myHeader = document.createElement('h1');
+            myHeader.textContent = jsonObject['squadName'];
+            header.appendChild(myHeader);
+
+            const myParagraph = document.createElement('p');
+            myParagraph.textContent = 'Home town: ' + jsonObject['homeTown'] + ' // Formed: ' + jsonObject['formed'];
+            header.appendChild(myParagraph);
+        }
     </script>
   </body>
 </html>
