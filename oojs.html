@@ -148,5 +148,20 @@
 
         Teacher.prototype = Object.create(Person.prototype);
        
+       // defining Student () constructor
+
+       function Student(first, last, age, gender, interests, faculty) {
+           Person.call(this, first, last, age, gender, interests);
+
+           this.faculty = faculty;
+       }
+
+       Student.prototype = Object.create(Person.prototype);
+
+       Student.prototype.constructor = Student;
+
+       Student.prototype.greeting = function() {
+            alert('Yo! I\'m ' + this.name.first + '.');
+        };
     </script>
 </html>
