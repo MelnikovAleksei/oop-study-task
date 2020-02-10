@@ -36,7 +36,7 @@
 
         request.open('GET', requestURL);
 
-        request.responseType('json');
+        request.responseType = 'json';
 
         request.send();
 
@@ -58,6 +58,41 @@
             const myParagraph = document.createElement('p');
             myParagraph.textContent = 'Home town: ' + jsonObject['homeTown'] + ' // Formed: ' + jsonObject['formed'];
             header.appendChild(myParagraph);
+        }
+
+        function showHeroes(jsonObject) {
+            const heroes = jsonObject['members'];
+
+            for (let index = 0; index < heroes.length; index++) {
+                
+                const myArticle = document.createElement('article');
+                const myHeader2 = document.createElement('h2');
+                const myParagraph1 = document.createElement('p');
+                const myParagraph2 = document.createElement('p');
+                const myParagraph3 = document.createElement('p');
+                const myList = document.createElement('ul');
+
+                myHeader2.textContent = heroes[index].name;
+                myParagraph1.textContent = 'Age: ' + heroes[index].age;
+                myParagraph2.textContent = 'Secret identity: ' + heroes[index].secretIdentity;
+                myParagraph3.textContent = 'Superpowers: ';
+
+                const superPowers = heroes[index].powers;
+                for (let j = 0; j < superPowers.length; j++) {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = superPowers[j];
+                    myList.appendChild(listItem);
+                }
+
+                myArticle.appendChild(myHeader2);
+                myArticle.appendChild(myParagraph1);
+                myArticle.appendChild(myParagraph2);
+                myArticle.appendChild(myParagraph3);
+                myArticle.appendChild(myList);
+
+                section.appendChild(myArticle);
+
+            }
         }
     </script>
   </body>
