@@ -32,7 +32,7 @@ Ball.prototype.update = function () {
     if ((this.x - this.size) <= 0) {
         this.velX = -(this.velX);
     };
-    if ((this.y + this.size) >= heigth) {
+    if ((this.y + this.size) >= height) {
         this.velY = -(this.velY);
     };
     if ((this.y - this.size) <= 0) {
@@ -41,4 +41,30 @@ Ball.prototype.update = function () {
     
     this.x += this.velX;
     this.y += this.velY; 
+}
+
+let balls = [];
+
+while (balls.length < 25) {
+    let size = random(10, 20);
+    let ball = new Ball(
+        random(0 + size, width - size),
+        random(0 + size, height - size),
+        random(-5, 5),
+        random(-5, 5),
+        'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) + ')',
+        size
+    );
+    balls.push(ball);
+}
+
+function loop() {
+    ctx.fillStyle = 'rgba(0,0,0,1)';
+    ctx.fillRect(0, 0, width, height);
+
+    for (let index = 0; index < balls.length; index++) {
+        balls[index].draw();
+        balls[index].update();        
+    }
+    requestAnimationFrame(loop);
 }
