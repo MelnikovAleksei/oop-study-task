@@ -1,4 +1,4 @@
-# Учебное веб-приложение "Bounce some balls" выполненное по методологии ООП по курсу ["Introducing JavaScript objects" (ссылка на задание)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_building_practice) MDN Web Docs 
+# Учебное веб-приложение "Bounce some balls" выполненное по методологии ООП на курсе ["Introducing JavaScript objects" (ссылка на задание)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_building_practice) MDN Web Docs 
 
 ## В веб-приложении используется техника обнаружения столкновений между объектами 
 
