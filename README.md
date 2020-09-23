@@ -2,7 +2,7 @@
 
 ## В веб-приложении используется техника обнаружения столкновений между объектами 
 
-*Read this in other languages:* [EN](https://github.com/MelnikovAleksei/oop-study-tasks/blob/master/README.EN.md) 
+*Read this in other languages:* [EN](https://github.com/MelnikovAleksei/oop-study-task/blob/master/README.EN.md) 
 
-["Bounce some balls" (Ссылка на GitHub Pages)](https://melnikovaleksei.github.io/oop-study-tasks/bouncing-balls/)
+["Bounce some balls" (Ссылка на GitHub Pages)](https://melnikovaleksei.github.io/oop-study-task/bouncing-balls/)
   
