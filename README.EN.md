@@ -2,6 +2,6 @@
 
 ## The web application uses a collision detection technique between objects 
 
-*Read this in other languages:* [RU](https://github.com/MelnikovAleksei/oop-study-tasks/blob/master/README.md) 
+*Read this in other languages:* [RU](https://github.com/MelnikovAleksei/oop-study-task/blob/master/README.md) 
 
-["Bounce some balls" (GitHub Pages)](https://melnikovaleksei.github.io/oop-study-tasks/bouncing-balls/)
+["Bounce some balls" (GitHub Pages)](https://melnikovaleksei.github.io/oop-study-task/bouncing-balls/)
