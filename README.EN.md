@@ -4,4 +4,4 @@
 
 *Read this in other languages:* [RU](https://github.com/MelnikovAleksei/oop-study-tasks/blob/master/README.md) 
 
-["Bounce some balls" (Ссылка на GitHub Pages)](https://melnikovaleksei.github.io/oop-study-tasks/bouncing-balls/)
+["Bounce some balls" (GitHub Pages)](https://melnikovaleksei.github.io/oop-study-tasks/bouncing-balls/)
